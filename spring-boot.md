@@ -10,3 +10,18 @@ public String hello(){
 @PostConstruct for calling a method/function as a once after the application is started
 
 @Component, @Value, @Order
+
+--- Spring Boot Secrity ---
+
+Authentication - {Username, Password}
+
+	- Knowledge Based --- passwords and pins
+	- Possession Based --- google phone based auth.
+	- Multi Factor
+
+Authorization - {JWT, auth_keys} 
+
+Principal - currently logged in user
+
+Role - gives/defines permission to users
+	- Group of permissions/Authorities
