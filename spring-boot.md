@@ -7,4 +7,6 @@ public String hello(){
  return "helloworld";
 } -- returns a string in response.
 
+@PostConstruct for calling a method/function as a once after the application is started
 
+@Component, @Value, @Order
