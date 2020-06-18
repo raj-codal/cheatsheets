@@ -13,11 +13,31 @@ public String hello(){
 
 --- Spring Boot Secrity ---
 
+@WebSecurity
+class xyz extends WebSecurityConfigurerAdapter{
+
+//Authentication
+@Override
+protected void configure(AuthenticationManagerBuilder auth){
+//
+}
+
+
+//Authorization
+@Override
+protected void configure(HttpSecurity http){
+//
+}
+
+}
+
 Authentication - {Username, Password}
 
 	- Knowledge Based --- passwords and pins
 	- Possession Based --- google phone based auth.
 	- Multi Factor
+
+	
 
 Authorization - {JWT, auth_keys} 
 
@@ -25,3 +45,5 @@ Principal - currently logged in user
 
 Role - gives/defines permission to users
 	- Group of permissions/Authorities
+
+
