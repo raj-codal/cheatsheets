@@ -47,18 +47,3 @@ Role - gives/defines permission to users
 	- Group of permissions/Authorities
 
 
-
-
-
-
----------------
-
-@component :
-	make a bean from a class (a factory model)
-
-@Autowire :
-	It tries to search the specified bean type and create an object of that bean and passes to the given reference
-
-@Primary :
-	If an interface (@component) is implemented by more than one class and we want to make sure that this class is used by spring instead of other, we use @Primary annotation and make it Primary.
-
