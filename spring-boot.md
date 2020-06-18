@@ -62,3 +62,4 @@ Role - gives/defines permission to users
 @Primary :
 	If an interface (@component) is implemented by more than one class and we want to make sure that this class is used by spring instead of other, we use @Primary annotation and make it Primary.
 
+Actuator
