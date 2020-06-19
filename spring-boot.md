@@ -38,6 +38,23 @@ public String hello(){
 			return new TestBean(name);
 		}
 
+@Requestbody :
+
+	It maps the request body to the passed object 
+
+ResponseEntity<T> :
+
+	@PostMapping("/add-user")
+    public ResponseEntity<Object> createUser(@RequestBody User user){
+        User savedUser = service.save(user);
+
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentContextPath().path("/user/{id}")
+                .buildAndExpand(savedUser.getId()).toUri();
+        System.out.println(location.toString());
+
+        return ResponseEntity.created(location).build();
+    }
 
 --- tools ---
 Actuator : 
@@ -81,3 +98,8 @@ Role - gives/defines permission to users
 	- Group of permissions/Authorities
 
 
+
+
+--- configs ---
+
+Jackson serialization is used for object to JSON conversion and vice versa
