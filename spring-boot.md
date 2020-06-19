@@ -10,9 +10,11 @@ Annotations :
 @RequestMapping({urls,....}) for making a spring servlet based controller
 
 @ResponseBody for making the type of response based on return type ... like 
+
 public String hello(){
  return "helloworld";
-} -- returns a string in response.
+} 
+-- returns a string in response. --
 
 @PostConstruct for calling a method/function as a once after the application is started
 
@@ -30,6 +32,7 @@ public String hello(){
 @PathVariable :
 	Used to extract the values in given in the URL
 	EG.
+
 		@GetMapping(path="/path/{name}")
 		public TestBean point2(@PathVariable String name){
 			return new TestBean(name);
