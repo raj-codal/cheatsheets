@@ -2,6 +2,7 @@
 Spring boot starters :
 	SOAP,RESTful,test,jdbc,hateoas,security,data-jpa,cache,data-rest
 
+---------------
 Annotations :
 
 @controller annotation for making a spring -- Controller -- on a class
@@ -16,6 +17,30 @@ public String hello(){
 @PostConstruct for calling a method/function as a once after the application is started
 
 @Component, @Value, @Order
+
+@component :
+	make a bean from a class (a factory model)
+
+@Autowire :
+	It tries to search the specified bean type and create an object of that bean and passes to the given reference
+
+@Primary :
+	If an interface (@component) is implemented by more than one class and we want to make sure that this class is used by spring instead of other, we use @Primary annotation and make it Primary.
+
+@PathVariable :
+	Used to extract the values in given in the URL
+	EG.
+		@GetMapping(path="/path/{name}")
+		public TestBean point2(@PathVariable String name){
+			return new TestBean(name);
+		}
+
+
+--- tools ---
+Actuator : 
+	for monitoring the spring apis (Complete website from the browser).
+
+
 
 --- Spring Boot Secrity ---
 
@@ -53,19 +78,3 @@ Role - gives/defines permission to users
 	- Group of permissions/Authorities
 
 
-
-
-
-
----------------
-
-@component :
-	make a bean from a class (a factory model)
-
-@Autowire :
-	It tries to search the specified bean type and create an object of that bean and passes to the given reference
-
-@Primary :
-	If an interface (@component) is implemented by more than one class and we want to make sure that this class is used by spring instead of other, we use @Primary annotation and make it Primary.
-
-Actuator
