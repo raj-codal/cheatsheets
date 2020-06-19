@@ -1,3 +1,9 @@
+
+Spring boot starters :
+	SOAP,RESTful,test,jdbc,hateoas,security,data-jpa,cache,data-rest
+
+Annotations :
+
 @controller annotation for making a spring -- Controller -- on a class
 
 @RequestMapping({urls,....}) for making a spring servlet based controller
