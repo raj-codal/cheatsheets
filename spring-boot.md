@@ -103,3 +103,34 @@ Role - gives/defines permission to users
 --- configs ---
 
 Jackson serialization is used for object to JSON conversion and vice versa
+
+
+
+
+--- Http Configs ---
+
+200 OK
+201 Resource Created
+
+400 Bad request
+404 Not Found
+406 Content not supported (Format error)
+
+500 Internal server error
+
+
+--- HateAoS ---
+
+It is used to send the resouces more robust. like if we want to send other links along with the user resource we can use the HATEAOS...
+
+//
+
+{
+	DATA: MAP<>
+	MSG: String
+	Success: False
+	TimeStamp: Int
+	StatusCode: Int
+}
+
+Check @Required/@NotNull
