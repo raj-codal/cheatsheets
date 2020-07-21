@@ -1,3 +1,6 @@
+Generating the jar:
+  mvn clean install
+
 nohup java -jar appointmentmaker-0.0.1-SNAPSHOT.jar> nohup.log &
 
 to stop:
