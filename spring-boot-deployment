@@ -12,11 +12,28 @@ to stop:
   fuser -k -n tcp 8080
 
 
-server script:
+Server Script:
 
 #shell script
+<pre>
   #git clone https://github.com/dhananiraj/builds.git
   cd ./builds
   git pull origin master
   fuser -k -n tcp 8080
-  nohup java -jar ./builds/*.jar> nohup.log &
+  nohup java -jar *.jar> nohup.log &
+</pre>
+
+Development Script:
+
+#shell script
+<pre>
+  mvn clean install
+  cd ./target
+  git clone https://github.com/dhananiraj/builds.git
+  cp *.jar ./builds
+  cd ./builds
+  git add .
+  git commit -m "update"
+  git push origin master
+  #pause
+</pre>
