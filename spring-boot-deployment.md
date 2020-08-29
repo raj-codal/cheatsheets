@@ -8,7 +8,7 @@ config java: sudo update-alternatives --config java
 Generating the jar:
   mvn clean install
 
-nohup java -jar appointmentmaker-0.0.1-SNAPSHOT.jar> nohup.log &
+nohup java -jar app.jar> nohup.log &
 
 to stop:
   fuser -k -n tcp 8080
