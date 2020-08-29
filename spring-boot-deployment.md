@@ -1,5 +1,7 @@
 installing java: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
 
+https://www.linuxuprising.com/2020/03/how-to-install-oracle-java-14-jdk14-on.html
+
 
 config java: sudo update-alternatives --config java
 
