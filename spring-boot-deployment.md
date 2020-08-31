@@ -2,6 +2,11 @@ installing java: https://www.digitalocean.com/community/tutorials/how-to-install
 
 https://www.linuxuprising.com/2020/03/how-to-install-oracle-java-14-jdk14-on.html
 
+OR :
+  ``` 
+  sudo add-apt-repository ppa:linuxuprising/java
+  sudo apt-get install openjdk-14-jdk 
+  ```
 
 config java: sudo update-alternatives --config java
 
